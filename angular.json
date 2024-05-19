@@ -107,8 +107,8 @@
             "prerender": false,
             "ssr": false,
             "browserTarget": "torrent-site:build:production",
-            "firebaseProject": "webfejl-kotprod",
-            "firebaseHostingSite": "webfejl-kotprod"
+            "firebaseProject": "webfejl-kotprog",
+            "firebaseHostingSite": "webfejl-kotprog"
           }
         }
       }
