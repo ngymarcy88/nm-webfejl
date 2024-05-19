@@ -1,0 +1,25 @@
+<div class="main_component">
+    <div class="center">
+    <h1 mat-dialog-title>Kérj valamit!</h1>
+        <div mat-dialog-content class="content">
+            <form [formGroup]="seekForm" (ngSubmit)="onSubmit()">
+                <mat-form-field class="example-full-width"><mat-label for="email">Név</mat-label><input matInput type="text" formControlName="name" /></mat-form-field>
+                <mat-form-field class="example-full-width" appearance="fill">
+                    <mat-label>Rövid leírás</mat-label>
+                    <textarea matInput placeholder="Azt kernem..." formControlName="description"></textarea>
+                </mat-form-field>
+                <mat-form-field appearance="fill">
+                    <mat-label>Válassz egy dátumot</mat-label>
+                    <input matInput [matDatepicker]="picker" formControlName="date">
+                    <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+            </form>
+        </div>
+        <div mat-dialog-action [align]="'center'">
+            <button mat-raised-button color="primary" type="submit" mat-dialog-close (click)="onSubmit()">Mentés</button>
+            <button mat-raised-button color="warn" mat-dialog-close>Vissza</button>
+        </div>
+    </div>
+</div>
+

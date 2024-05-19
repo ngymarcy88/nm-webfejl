@@ -1,0 +1,90 @@
+.mat-acc{
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+}
+
+.grid1{
+    width: 50%;
+    height: 100px;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.head{
+    text-align: center;
+    width: 50%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.bg{
+    padding-top: 5px;
+    margin-top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: 1000px;
+    background: rgb(63,81,181);
+    background: linear-gradient(0deg,rgba(254,254,254,1) 0%,rgba(63,81,181,1) 100%);
+    border-style: initial;
+    border-width: 5px;
+    border-color: #242020;
+  }
+
+  .answers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 25px;
+  }
+  
+  .answers td, .answers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .answers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  .answers tr:hover {background-color: #ddd;}
+  
+  .answers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .tableplease{
+      font-size: 30px;
+  }
+
+  .newseek{
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  .newseek a{
+    font-size: 20px;
+    padding: 10px;
+  }
+
+
+  @media only screen and (max-width: 600px) {
+    .mat-acc{
+      width: 85%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+  }
+  }

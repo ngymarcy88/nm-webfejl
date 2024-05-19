@@ -1,0 +1,33 @@
+<mat-sidenav-container>
+<mat-sidenav #sidenav>
+<app-menu (selectedPage)="changePage($event)" [currentPage]="page" (NavBarClose)="onClose($event,sidenav)" [loggedinUser]="loggedinUser" (onLogout)="logout($event)" ></app-menu>
+</mat-sidenav>
+<mat-sidenav-content>
+
+  <mat-toolbar color="primary">
+    <div fxHide.gt-xs>
+    <button mat-icon-button (click)="sideBarToggle(sidenav)">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+    <div>NemBuqiTorrent</div>
+    <div fxFlex fxLayout fxLayoutAlign="flex-end" fxHide.xs>
+      <ul fxLayout fxLayoutGap="10px" class="nav-items">
+        <li *ngIf="!(loggedinUser)"><a routerLink="/login">Login</a></li>
+        <li *ngIf="loggedinUser"><a routerLink="/login" (click)="logout()">Logout</a></li>
+        <li *ngIf="!(loggedinUser)" ><a routerLink="/signup">Sign-Up</a></li>
+        <li *ngIf="loggedinUser"><a routerLink="/main">Feed</a></li>
+        <li *ngIf="loggedinUser"><a routerLink="/download">Download</a></li>
+        <li *ngIf="loggedinUser"><a routerLink="/upload">Upload</a></li>
+        <li><a routerLink="/contact">Contact</a></li>
+        <li *ngIf="loggedinUser"><a routerLink="/table">Legyszi-board</a></li>
+        <li *ngIf="loggedinUser"><a routerLink="/profile">Profile</a></li>
+      </ul>
+    </div>
+  </mat-toolbar>
+<router-outlet></router-outlet>
+</mat-sidenav-content>
+</mat-sidenav-container>
+
+
+

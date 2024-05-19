@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "webfejl-kotprod": {
+      "hosting": {
+        "torrent-site": [
+          "webfejl-kotprod"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "webfejl-kotprod"
+  }
+}

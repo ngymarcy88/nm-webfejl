@@ -1,0 +1,39 @@
+<div class="bg">
+    <div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">  
+    <mat-card class="box-head">
+        <mat-card-header>
+            <mat-card-title>Sajat profil</mat-card-title>
+        </mat-card-header>
+    </mat-card>
+    <mat-card class="box">
+        <mat-card-header>
+            <mat-card-title>{{item?.username}}</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <h1>Email:</h1>
+            <p>{{item?.email}}</p>
+            <h1>Neve:</h1>
+            <p>{{item?.name?.firstname}} {{item?.name?.lastname}}</p>
+            <h1>Szuletesi datum:</h1>
+            <p>{{item?.dateofbirth.toDate() | date:'shortDate'}}</p>
+        </mat-card-content>
+    </mat-card>
+    <mat-card class="box-number">
+        <mat-card-header>
+            <mat-card-title>Feltöltött torrentek száma</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p [ngStyle]="{'font-size': '35px'}">{{torrentcounter}}</p>
+        </mat-card-content>
+    </mat-card>
+    <mat-card class="box-number">
+        <mat-card-header>
+            <mat-card-title>Feltöltött kommentek száma</mat-card-title>
+        </mat-card-header>
+        <mat-card-content>
+            <p [ngStyle]="{'font-size': '35px'}">{{commentcounter}}</p>
+        </mat-card-content>
+    </mat-card>
+    </div>
+</div>
+

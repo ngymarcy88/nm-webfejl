@@ -1,0 +1,29 @@
+<div class="bg">
+  <div class="login-wrapper" fxLayout="row" fxLayoutAlign="center center">  
+  <mat-card class="box-head">
+      <mat-card-header>
+          <mat-card-title [ngStyle]="{'font-style': '30px','padding-bottom': '25px'}">NemBuqiTorrent</mat-card-title>
+          <mat-card-title>Köszöntelek az oldalon kedves kalóz!</mat-card-title>
+      </mat-card-header>
+  </mat-card>
+  <mat-card class="box">
+    <mat-card-header>
+        <mat-card-title>Teis meguntad már az éjszakákba nyúló kódolást és szenvedést a beadandókkal?</mat-card-title>
+        <mat-card-content>
+          <p>Ha igen a valasz akkor bizon jó helyen jársz</p>
+          <p>Az oldal azért jött létre, hogy egymással megosztva saját gondjainkat,megoldást találjunk rá</p>
+          <p>Az oldalon megtalálsz 7 féle oldalt, de ebből ami nekünk fontos az</p>
+          <p>Letöltés-A megtalálható torrentek listája.</p>
+          <button mat-raised-button color="primary" type="submit" [routerLink]="'/download'">Vigyél oda</button>
+          <p>Feltöltés-Itt feltudsz tölteni saját anyagot bajtársaid segítségére.</p>
+          <button mat-raised-button color="primary" type="submit" [routerLink]="'/upload'">Vigyél oda</button>
+          <p>Saját profil-Adataid</p>
+          <button mat-raised-button color="primary" type="submit" [routerLink]="'/profile'">Vigyél oda</button>
+          <p>Légyszi-board-Kéréseket tudsz feltenni,amiket teljesíteni tudnak a többiek</p>
+          <button mat-raised-button color="primary" type="submit" [routerLink]="'/table'">Vigyél oda</button>
+        </mat-card-content>
+    </mat-card-header>
+</mat-card>
+  </div>
+</div>
+
